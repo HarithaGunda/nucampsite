@@ -12,7 +12,7 @@
     <!-- endbuild -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />>
     <!-- To avoid favicon.ico error which always be pulled by most of the borwsers from the root of our server to display icon in the title bar of our webpage -->
-    <link rel="icon" href="data:;base64,="> 
+    <link rel="icon" href="data:;base64,=">
     <title>NuCamp: A Better Way To Camp</title>
 </head>
 
@@ -29,8 +29,10 @@
                     <h2>a better way to camp</h2>
                 </div>
                 <div class="col-md-4 col-xl-2">
-                    <a class="btn btn-info btn-lg mt-4" data-toggle="modal" data-target="#reserveModal">Reserve
+                    <a class="btn btn-info btn-lg mt-4" id="reserveButton">Reserve
                         Campsite</a>
+                    <!--<a class="btn btn-info btn-lg mt-4" data-toggle="modal" data-target="#reserveModal">Reserve
+                        Campsite</a>-->
                     <!-- <a class="btn btn-info btn-lg mt-4" href="#reserveForm" data-toggle="tooltip"
                         data-placement="bottom" data-html="true"
                         title="Or call us at <br /><strong>1-206-555-1234</strong>" data-target=>Reserve Campsite</a>-->
@@ -44,7 +46,7 @@
     <div id="reserveModal" class="modal fade" role="dialog">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
-                <div class="modal-header bg-info text-white">
+                <div class="modal-header">
                     <h3 class="modal-title">Reserve a Campsite </h3>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
@@ -115,7 +117,8 @@
                                 class="fa fa-address-card fa-lg"></i> Contact</a></li>
                 </ul>
                 <span class="navbar-text ml-auto">
-                    <a data-toggle="modal" data-target="#loginModal">
+                    <!--<a data-toggle="modal" data-target="#loginModal">-->
+                    <a id="loginButton">
                         <i class="fa fa-sign-in"> Login</i></a>
                 </span>
             </div>
